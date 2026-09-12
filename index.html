@@ -1,46 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Good Morning Ji — The Morning Verification Bureau</title>
-<meta name="description" content="Your uncle sent sunshine. Is it actually raining? Good Morning Ji compares morning images with real weather. A gloriously unnecessary project from GEC Thrissur.">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='navy'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-size='23' fill='yellow'%3EG%3C/text%3E%3C/svg%3E">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good Morning Ji</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}body{margin:0;color:#151515;background:#197c7c;font:17px/1.55 Georgia,'Times New Roman',serif;padding:32px 18px}a{color:#0000b8;text-decoration:underline;text-underline-offset:3px}a:visited{color:#551a8b}a:hover{color:#b00000}a:focus-visible,summary:focus-visible{outline:3px solid #a52b00;outline-offset:5px}.skip{position:absolute;top:-90px;background:white;padding:8px}.skip:focus{top:0}.shell{max-width:1060px;margin:auto;background:#c0c0c0;border:3px outset #eee;box-shadow:10px 10px 0 #075555}.titlebar{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#000080;color:white;padding:7px 12px;font:bold 14px/1.4 'Courier New',monospace}.windowmarks{letter-spacing:5px;white-space:nowrap}.address{display:flex;gap:12px;padding:8px 12px;align-items:center;font:14px/1.4 Arial,sans-serif}.address span{background:white;border:2px inset #ddd;padding:5px 9px;flex:1;overflow-wrap:anywhere}.page{margin:0 9px;background:#fffef0;border:2px inset #eee}.masthead{text-align:center;padding:25px 24px 20px;border-bottom:5px double navy}.eyebrow{font:bold 13px/1.5 'Courier New',monospace;letter-spacing:2px;text-transform:uppercase}.masthead h1{font-size:clamp(2.8rem,8vw,5.7rem);line-height:1.05;letter-spacing:-3px;color:navy;margin:10px 0 12px}.masthead h1 i{color:#ae2a12}.masthead p{margin:0;font-style:italic}nav{padding:13px 18px;text-align:center;border-bottom:1px solid navy;display:flex;flex-wrap:wrap;justify-content:center;gap:9px 25px;font:bold 14px/1.5 'Courier New',monospace}.bulletin{padding:10px 20px;background:#ffffb5;text-align:center;font:14px/1.5 'Courier New',monospace;border-bottom:1px solid #9b8d2c}.bulletin strong{background:#a82916;color:white;padding:2px 6px}.hero{display:grid;grid-template-columns:1.45fr 1fr;gap:30px;padding:40px 35px}.hero h2{font-size:clamp(2rem,4.5vw,3.55rem);line-height:1.08;letter-spacing:-1.5px;margin:12px 0 19px}.hero h2 em{color:#a82916}.hero p{max-width:560px}.button{display:inline-block;padding:12px 20px;background:#d6d6d6;border:3px outset white;color:navy!important;font:bold 16px/1.35 'Courier New',monospace;text-decoration:none;box-shadow:2px 2px 0 #333}.button:hover{background:#ffffb5}.button:active{border-style:inset;transform:translate(1px,1px)}.micro{font:13px/1.5 'Courier New',monospace;color:#474747}.case{align-self:center;border:2px solid navy;background:white;transform:rotate(1deg)}.casehead{background:navy;color:white;padding:9px 14px;font:bold 13px/1.5 'Courier New',monospace}.casemain{padding:20px}.case .quote{font-size:30px;line-height:1.25;margin:13px 0 22px;color:#a82916;text-align:center}.case dl{margin:0}.case dl div{display:grid;grid-template-columns:100px 1fr;gap:8px;padding:9px 0;border-top:1px dotted #999}.case dt{font:bold 13px/1.5 'Courier New',monospace}.case dd{margin:0;font-size:15px}.stamp{margin-top:18px;border:3px double #a82916;color:#a82916;text-align:center;padding:6px;font:bold 17px 'Courier New',monospace;letter-spacing:2px}.section{padding:30px 35px;border-top:1px solid #8d8d80}.section h2{font-size:30px;color:navy;margin:4px 0 15px;line-height:1.2}.columns{display:grid;grid-template-columns:1fr 1fr;gap:32px}.columns article+article{border-left:1px dotted #888;padding-left:32px}.section p{margin:12px 0}.label{font:bold 13px 'Courier New',monospace;letter-spacing:1px;color:#a82916}.steps{list-style:none;counter-reset:step;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:24px 0 5px}.steps li{counter-increment:step;border-top:3px solid navy;padding:16px 0 0}.steps li:before{content:'0' counter(step);font:bold 28px 'Courier New',monospace;color:#a82916}.steps h3{font-size:21px;margin:9px 0}.steps p{font-size:16px;margin:0}.featuretable{width:100%;border-collapse:collapse;margin-top:20px;font-size:16px}.featuretable th,.featuretable td{border:1px solid #999;padding:13px 15px;text-align:left;vertical-align:top}.featuretable th{background:#e2e2d6;color:navy}.featuretable td:first-child{width:30%;font-weight:bold}.notice{border:1px solid #a82916;background:#fff5de;padding:17px 20px;margin-top:22px;font-size:15px}.notice p{margin:5px 0}details{border-bottom:1px dotted #777;padding:13px 0}summary{cursor:pointer;color:navy;font-weight:bold}details p{font-size:16px}.final{text-align:center;background:#ededdf}.final h2{font-size:34px}.team{display:flex;justify-content:space-between;gap:25px;align-items:flex-start;padding:24px 35px;font-size:14px}.team strong{color:navy}.team p{margin:3px 0}.badges{display:flex;flex-wrap:wrap;gap:7px;justify-content:flex-end}.badge{border:2px outset white;background:#d0d0d0;padding:5px 8px;font:bold 12px/1.3 'Courier New',monospace;text-align:center}.statusbar{padding:6px 12px;font:13px 'Courier New',monospace;display:flex;justify-content:space-between;gap:15px}.back{text-align:center;margin:13px 0 19px;font:14px 'Courier New',monospace}@media(max-width:650px){body{padding:10px 7px}.shell{box-shadow:4px 4px 0 #075555}.address{font-size:12px;padding:6px}.hero,.section{padding:26px 20px}.hero,.columns,.steps{grid-template-columns:1fr}.hero{gap:22px}.masthead{padding:22px 12px}.masthead h1{letter-spacing:-2px}.columns article+article{border-left:0;border-top:1px dotted #888;padding:25px 0 0}.case{transform:none}.steps{gap:22px}.team{flex-direction:column;padding:23px 20px}.badges{justify-content:flex-start}.windowmarks{display:none}.statusbar{font-size:12px;flex-wrap:wrap}.featuretable th,.featuretable td{padding:10px 8px}.featuretable td:first-child{width:35%}nav{gap:12px 16px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{body{background:white;padding:0}.shell{box-shadow:none;border:0}.button,.address,.statusbar{display:none}.page{border:0}}
+  :root {
+    --paper: #faf8f4;
+    --ink: #1c1c1a;
+    --ink-soft: #58554d;
+    --chat-bg: #e9e3d8;
+    --bubble-in: #ffffff;
+    --bubble-out: #d9fdd3;
+    --wa-green: #128c7e;
+    --wa-green-dark: #0b5c53;
+    --tick-blue: #34b7f1;
+    --rule: #ddd6c6;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+
+  .wrap {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 3.2rem 1.5rem 4rem 1.5rem;
+  }
+
+  .kicker {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin-bottom: 0.6rem;
+  }
+
+  h1 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.25;
+    margin: 0 0 1rem 0;
+    max-width: 24ch;
+  }
+
+  p.lede {
+    font-size: 1.02rem;
+    color: var(--ink-soft);
+    max-width: 46ch;
+    margin: 0 0 2.2rem 0;
+  }
+
+  /* --- phone / chat mockup --- */
+  .phone {
+    background: var(--chat-bg);
+    border: 1px solid var(--rule);
+    border-radius: 18px;
+    padding: 0.9rem 0.8rem 1.1rem 0.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .chat-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--wa-green-dark);
+    color: #fff;
+    padding: 0.6rem 0.8rem;
+    border-radius: 10px 10px 0 0;
+    margin: -0.9rem -0.8rem 0.9rem -0.8rem;
+  }
+
+  .chat-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f2a65a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+
+  .chat-name {
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+
+  .chat-status {
+    font-size: 0.72rem;
+    color: #d8ece9;
+  }
+
+  .bubble {
+    max-width: 84%;
+    padding: 0.55rem 0.7rem 0.4rem 0.7rem;
+    margin-bottom: 0.55rem;
+    font-size: 0.92rem;
+    opacity: 0;
+    transform: translateY(6px);
+    animation: rise 0.5s ease forwards;
+  }
+
+  .bubble.in {
+    background: var(--bubble-in);
+    border-radius: 2px 10px 10px 10px;
+    margin-right: auto;
+    animation-delay: 0.1s;
+  }
+
+  .bubble.out {
+    background: var(--bubble-out);
+    border-radius: 10px 2px 10px 10px;
+    margin-left: auto;
+    animation-delay: 0.9s;
+  }
+
+  .bubble .forward-img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .bubble .meta {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3px;
+    font-size: 0.68rem;
+    color: var(--ink-soft);
+    margin-top: 0.15rem;
+  }
+
+  .ticks { color: var(--tick-blue); }
+
+  @keyframes rise {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* --- how it works --- */
+  .steps {
+    margin: 0 0 2.4rem 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: step;
+  }
+
+  .steps li {
+    counter-increment: step;
+    display: flex;
+    gap: 0.8rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 0.95rem;
+  }
+
+  .steps li:last-child { border-bottom: none; }
+
+  .steps li::before {
+    content: counter(step);
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid var(--ink);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+  }
+
+  /* --- CTA --- */
+  .cta-row {
+    margin: 0 0 2.6rem 0;
+  }
+
+  .cta {
+    display: inline-block;
+    background: var(--wa-green);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.85rem 1.6rem;
+    border-radius: 999px;
+  }
+
+  .cta:hover { background: var(--wa-green-dark); }
+
+  .cta-note {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    margin-top: 0.6rem;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 2.2rem 0;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+
+  footer p { margin: 0.3rem 0; }
+
+  footer a { color: var(--ink-soft); }
 </style>
 </head>
-<body id="top">
-<a class="skip" href="#main">Skip to content</a>
-<div class="shell">
- <div class="titlebar"><span>Good Morning Ji — Morning Verification Bureau</span><span class="windowmarks" aria-hidden="true">_ □ ×</span></div>
- <div class="address">Address <span>https://goodmorningji.vercel.app/</span></div>
- <div class="page">
- <header class="masthead"><div class="eyebrow">From the family group to the weather report</div><h1>Good Morning <i>Ji.</i></h1><p>A very serious investigation into a very unserious problem.</p></header>
- <nav aria-label="Main navigation"><a href="#problem">The problem</a><a href="#solution">Our solution</a><a href="#how">How it works</a><a href="#details">The fine print</a></nav>
- <div class="bulletin"><strong>PUBLIC NOTICE</strong> A picture of sunshine is not proof of sunshine.</div>
- <main id="main">
- <section class="hero" aria-labelledby="headline">
- <div><div class="eyebrow">Family-group fact-checking, finally.</div><h2>Your uncle sent sunshine.<br><em>It's raining outside.</em></h2><p>Every morning, a new sunrise lands in the family group. But is it even morning? And does that impossibly blue sky match the weather where you are?</p><p><strong>Good Morning Ji checks the picture against the weather.</strong> Upload a greeting. Pick a place and date. Find out how well the image matches reality.</p><p><a class="button" href="https://goodmorningji.vercel.app/">Investigate a good morning »</a></p><div class="micro">JPG / PNG / WEBP · Runs in your browser</div></div>
- <aside class="case" aria-label="Illustrative case, not a real analysis"><div class="casehead">CASE FILE: THE SUSPICIOUS SUNRISE</div><div class="casemain"><div class="micro">ILLUSTRATIVE SCENARIO — NOT LIVE DATA</div><p class="quote">“Good morning!<br>Have a bright &amp;<br>beautiful day!”</p><dl><div><dt>EXHIBIT A</dt><dd>A suspiciously sunny greeting.</dd></div><div><dt>EXHIBIT B</dt><dd>The rain outside your window.</dd></div><div><dt>QUESTION</dt><dd>Does this morning check out?</dd></div></dl><div class="stamp">VERIFICATION PENDING</div></div></aside>
- </section>
- <div class="section columns">
- <article id="problem"><div class="label">01 / THE PROBLEM STATEMENT</div><h2>The problem<br>that doesn't exist.</h2><p>Family-group good morning images arrive with flowers, sunshine, and unwavering confidence. What they don't come with is evidence.</p><p>We wanted to know whether a daily greeting actually depicts a morning scene—and whether its visible weather resembles real conditions at a chosen place and date.</p><p><em>Someone had to ask. Apparently, it was us.</em></p></article>
- <article id="solution"><div class="label">02 / THE SOLUTION</div><h2>The solution<br>nobody asked for.</h2><p>Good Morning Ji reads visual clues from your image and compares them with live or historical weather data from Open-Meteo.</p><p>Brightness and colour cues suggest an approximate photo time. Visual weather estimates are compared with recorded conditions, producing an explainable match score.</p><p><strong>Less “nice pic, uncle.” More “let's examine the evidence.”</strong></p></article>
- </div>
- <section class="section" id="how"><div class="label">03 / THE PROCEDURE</div><h2>Three steps. One unnecessary investigation.</h2><ol class="steps"><li><h3>Submit the evidence.</h3><p>Upload a JPG, PNG, or WEBP morning image. Select the location and date you want to check.</p></li><li><h3>Check the sky.</h3><p>The app estimates visual conditions and approximate photo time, then retrieves real weather for your selection.</p></li><li><h3>Read the verdict.</h3><p>Compare the image prediction with recorded weather, inspect the match score, and optionally save the report.</p></li></ol></section>
- <section class="section" id="details"><div class="label">04 / INSIDE THE BUREAU</div><h2>Actual data. Questionable necessity.</h2><table class="featuretable"><caption class="micro" style="text-align:left;margin-bottom:10px">What goes into a Good Morning Ji report</caption><thead><tr><th scope="col">The evidence</th><th scope="col">What the app does with it</th></tr></thead><tbody><tr><td>Light &amp; colour</td><td>Uses brightness and colour balance to estimate approximate photo time.</td></tr><tr><td>Visual weather</td><td>Estimates cloud cover, rain likelihood, temperature, humidity, and visibility from image cues.</td></tr><tr><td>Real weather</td><td>Retrieves live or historical conditions through Open-Meteo, using your selected date and location.</td></tr><tr><td>A match score</td><td>Compares the estimates with recorded weather and shows the comparison details.</td></tr><tr><td>Your case history</td><td>Saves completed reports locally in your browser when you choose to save them.</td></tr></tbody></table>
- <div class="notice"><strong>IMPORTANT: A similarity check, not a scientific forecast.</strong><p>Image-based weather and time estimates are uncertain. The local fallback uses simple Canvas colour heuristics—not a full understanding of the scene. A high match score does not prove that an image was taken at that place or time.</p></div>
- <details><summary>Does it need an AI API key?</summary><p>The app works without an API key using a browser-based Canvas fallback. Developers can optionally configure a compatible vision-analysis endpoint with <code>VITE_VISION_API_URL</code>.</p></details>
- <details><summary>Where does my image go?</summary><p>The fallback analyzes the image in your browser. If a remote vision endpoint is configured, the image is sent to that service for analysis. Saved report history stays in browser local storage.</p></details>
- <details><summary>What's under the hood?</summary><p>React, TypeScript, Vite, HTML, CSS, the browser Canvas API, and Open-Meteo's Geocoding, Forecast, and Archive APIs. No hardware required. Just a morning worth investigating.</p></details>
- </section>
- <section class="section final"><div class="eyebrow">The next forward is already on its way.</div><h2>Trust the greeting.<br>Verify the weather.</h2><p>Your family group has supplied the evidence. Take it from here.</p><p><a class="button" href="https://goodmorningji.vercel.app/">Open Good Morning Ji »</a></p><div class="micro">Opens the actual Morning Weather Predictor application.</div></section>
- </main>
- <footer><div class="team"><div><strong>Made with love at TinkerHub Useless Projects.</strong><p>Team BJP interns · GEC Thrissur</p><p>Harikrishnan K R &amp; Sebastian T D</p></div><div class="badges"><span class="badge">BROWSER<br>POWERED</span><span class="badge">USELESS<br>PROJECTS '26</span><span class="badge">GOOD MORNING<br>JI APPROVED*</span></div></div><p class="micro" style="text-align:center;margin:0 15px">*Self-appointed. No uncles were consulted.</p><div class="back"><a href="#top">[ Back to top ]</a></div></footer>
- </div>
- <div class="statusbar"><span>Done. Awaiting suspicious good mornings.</span><span>Software only · 2026</span></div>
-</div>
+<body>
+  <div class="wrap">
+
+    <div class="kicker">TinkerHub Useless Projects · GEC Thrissur</div>
+    <h1>Uncle sent "Good Morning" again. But was it, though?</h1>
+    <p class="lede">
+      Good Morning Ji checks the weather in your uncle's good-morning WhatsApp photo
+      against what the sky is actually doing right now. It doesn't need to exist.
+      We made it anyway.
+    </p>
+
+    <div class="phone">
+      <div class="chat-header">
+        <div class="chat-avatar">👴</div>
+        <div>
+          <div class="chat-name">Sudhakaran Uncle</div>
+          <div class="chat-status">online</div>
+        </div>
+      </div>
+
+      <div class="bubble in">
+        <svg viewBox="0 0 400 240" class="forward-img" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ffd97d"/>
+              <stop offset="100%" stop-color="#ff8a65"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="240" fill="url(#sky)"/>
+          <circle cx="330" cy="55" r="34" fill="#fff3c4"/>
+          <g stroke="#fff3c4" stroke-width="4">
+            <line x1="330" y1="5" x2="330" y2="-8"/>
+            <line x1="378" y1="55" x2="392" y2="55"/>
+            <line x1="364" y1="21" x2="373" y2="12"/>
+          </g>
+          <path d="M0 190 Q100 150 200 185 T400 175 V240 H0 Z" fill="#5a8f4f"/>
+          <g transform="translate(70,175)">
+            <circle r="10" fill="#e05d8f"/><circle r="10" cx="16" cy="-6" fill="#e879a8"/>
+            <circle r="10" cx="-16" cy="-6" fill="#e879a8"/><circle r="10" cx="8" cy="-18" fill="#f2a0bf"/>
+            <circle r="10" cx="-8" cy="-18" fill="#f2a0bf"/><circle r="6" cy="-6" fill="#ffe066"/>
+          </g>
+          <g transform="translate(190,200)">
+            <circle r="9" fill="#f2994a"/><circle r="9" cx="14" cy="-5" fill="#f6ad55"/>
+            <circle r="9" cx="-14" cy="-5" fill="#f6ad55"/><circle r="9" cx="7" cy="-16" fill="#fbc687"/>
+            <circle r="9" cx="-7" cy="-16" fill="#fbc687"/><circle r="5" cy="-5" fill="#fff3c4"/>
+          </g>
+          <text x="200" y="90" text-anchor="middle" font-family="'Brush Script MT', cursive"
+                font-size="34" fill="#ffffff" stroke="#8a4b1f" stroke-width="0.5">Good Morning!</text>
+        </svg>
+        Good morning 🙏 have a blessed day
+        <div class="meta">6:42 AM</div>
+      </div>
+
+      <div class="bubble out">
+        Checked the sky over Thrissur just now — it's pouring rain. Match score: 12%.
+        <div class="meta">6:43 AM <span class="ticks">✓✓</span></div>
+      </div>
+    </div>
+
+    <ol class="steps">
+      <li>You upload the photo uncle sent</li>
+      <li>We guess the time of day from how bright and colourful it looks</li>
+      <li>We pull real weather for your city and date from Open-Meteo</li>
+      <li>We compare the two and give it a match score</li>
+      <li>You get to tell uncle he's wrong, with data</li>
+    </ol>
+
+    <div class="cta-row">
+      <a class="cta" href="https://good-morning-ji.vercel.app" target="_blank" rel="noopener">Try Goodmorning Ji</a>
+      <span class="cta-note">Opens the live app · works with JPG, PNG or WEBP</span>
+    </div>
+
+    <hr>
+
+    <footer>
+      <p>Built by Harikrishnan K R and Sebastian T D at GEC Thrissur, for TinkerHub's Useless Projects hackathon.</p>
+      <p>Weather data from Open-Meteo. No photo leaves your browser unless you turn on the optional vision API.</p>
+    </footer>
+
+  </div>
 </body>
 </html>
-
